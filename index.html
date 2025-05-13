@@ -1,18 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Buseye Onurundan Kalp <3</title>
-  <style>
-    canvas {
-      display: block;
-      margin: auto;
-      background-color: #fff0f6;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalp Deseni</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #heart-container {
+            display: grid;
+            grid-template-columns: repeat(30, 20px);
+            grid-template-rows: repeat(30, 20px);
+            gap: 2px;
+        }
+
+        .heart {
+            font-size: 20px;
+            color: transparent;
+            animation: fadeIn 0.1s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                color: transparent;
+            }
+            100% {
+                color: red;
+            }
+        }
+
+        .message {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-  <canvas id="heartCanvas" width="500" height="500"></canvas>
-  <script src="script.js"></script>
+    <div class="message">Onur <3 Buse</div>  <!-- Yazıyı ekledik -->
+    <div id="heart-container"></div>
+    <script src="script.js"></script>
 </body>
 </html>
