@@ -2,7 +2,7 @@
 body {
     background-color: #000;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: monospace;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,27 +13,32 @@ body {
     text-align: center;
 }
 
-/* Mesaj yazısı */
+/* Mesaj yazısı kalbin ortasında yer alacak */
 .message {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
-    color: white;
-    margin-bottom: 20px;
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Kalp emojilerini içeren container */
 #heart-container {
     display: grid;
-    grid-template-columns: repeat(33, 30px);  /* Her sütun 30px genişliğinde */
-    grid-template-rows: repeat(20, 30px);     /* Her satır 30px yüksekliğinde */
-    gap: 5px;
+    grid-template-columns: repeat(23, 30px);  /* Her sütun 30px genişliğinde */
+    grid-template-rows: repeat(14, 30px);     /* Her satır 30px yüksekliğinde */
+    gap: 0;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-/* Kalp emojilerinin görünümü ve animasyonu */
+/* Kalp şekli ASCII karakterlerinin görünümü */
 .heart {
-    font-size: 30px;
+    font-size: 20px;
+    line-height: 30px;
     color: transparent;
     animation: fadeIn 0.1s forwards;
 }
