@@ -40,7 +40,7 @@ function drawHeart() {
         heartCells.forEach((cell, index) => {
             setTimeout(() => {
                 cell.style.color = "red";
-            }, 100 * index);
+            }, 100 * index); // Kalp emojileri yavaşça rengini alacak
         });
 
         currentRow++;
