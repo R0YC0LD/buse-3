@@ -3,55 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalp Deseni</title>
-    <style>
-        body {
-            background-color: #000;
-            color: white;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            overflow: hidden;
-            flex-direction: column;
-            text-align: center;
-        }
-
-        #heart-container {
-            display: grid;
-            grid-template-columns: repeat(30, 20px);
-            grid-template-rows: repeat(30, 20px);
-            gap: 2px;
-        }
-
-        .heart {
-            font-size: 20px;
-            color: transparent;
-            animation: fadeIn 0.1s forwards;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                color: transparent;
-            }
-            100% {
-                color: red;
-            }
-        }
-
-        .message {
-            font-size: 30px;
-            font-weight: bold;
-            color: white;
-            margin-bottom: 20px;
-        }
-    </style>
+    <title>Buseye Onurundan</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS dosyasına bağlantı -->
 </head>
 <body>
-    <div class="message">Onur <3 Buse</div>  <!-- Yazıyı ekledik -->
-    <div id="heart-container"></div>
-    <script src="script.js"></script>
+    <div class="message">Onur <3 Buse</div>
+    <div id="heart-container"></div> <!-- Kalp emojilerinin gösterileceği alan -->
+    <script src="script.js"></script> <!-- JavaScript dosyasına bağlantı -->
 </body>
 </html>
