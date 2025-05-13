@@ -15,9 +15,9 @@ body {
 
 /* Mesaj yazısı kalbin ortasında yer alacak */
 .message {
-    font-size: 24px;
+    font-size: 16px;        /* Küçültüldü */
     font-weight: bold;
-    color: red;
+    color: white;           /* Beyaz yapıldı */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -27,8 +27,8 @@ body {
 /* Kalp emojilerini içeren container */
 #heart-container {
     display: grid;
-    grid-template-columns: repeat(23, 30px);  /* Her sütun 30px genişliğinde */
-    grid-template-rows: repeat(14, 30px);     /* Her satır 30px yüksekliğinde */
+    grid-template-columns: repeat(23, 20px);  /* Daha küçük kalpler için daraltıldı */
+    grid-template-rows: repeat(14, 20px);     /* Aynı şekilde */
     gap: 0;
     justify-content: center;
     align-items: center;
@@ -37,8 +37,8 @@ body {
 
 /* Kalp şekli ASCII karakterlerinin görünümü */
 .heart {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 14px;         /* Küçültüldü */
+    line-height: 20px;       /* Uyumlu hale getirildi */
     color: transparent;
     animation: fadeIn 0.1s forwards;
 }
